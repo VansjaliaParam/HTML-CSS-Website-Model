@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Bee</title>
+
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <section class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="package.html">package</a>
+        <a href="login.html">login</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="book.html">book</a>
+      </nav>
+      <div class="logodiv">
+        <a href="home.html" class="logo"
+          ><img src="images/logo.jpg" class="logo"
+        /></a>
+      </div>
+      
+      
+    </section>
+
+    <!-- partial:index.partial.html -->
+
+    <section class="signup">
+      <div>
+        <h1 style="color: black;">Sign Up</h1>
+      </div>
+      <div class="container">
+        <form class="book-form" name="signup" action="login.html" onsubmit="return validatesign()">
+         
+          <div class="row input-container" style="display: grid;align-content: center;justify-content: center;">
+            
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text"  id="signname"  >
+                <label>Username</label>
+                <span id="sn"></span>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text"  id="signemail"  >
+                <label>Email</label>
+                <span id="se"></span>
+              </div>
+            </div>
+
+            <!-- input here -->
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="number"  id="signphone"  >
+                <label>phone no</label>
+                <span id="sp"></span>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="password"  id="signpassword"  >
+                <label>password</label>
+                <span id="spass"></span>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="password"  id="signcpassword"  >
+                <label>confirm password</label>
+                <span id="scpass"></span>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <center><button class="btn" type="submit">sign up</button></center>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+        <script src="val.js">
+        </script>
+  </body>
+</html>

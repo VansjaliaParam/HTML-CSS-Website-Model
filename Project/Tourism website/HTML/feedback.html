@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bee</title>
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+     
+        
+    </head>
+    <body>
+
+        <section class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <nav class="navbar">
+              <a href="home.html">home</a>
+              <a href="about.html">about</a>
+              <a href="package.html">package</a>
+              <a href="login.html">login</a>
+              <a href="feedback.html">Feedback</a>
+              <a href="book.html">book</a>
+            </nav>
+            <div class="logodiv">
+              <a href="home.html" class="logo"
+                ><img src="images/logo.jpg" class="logo"
+              /></a>
+            </div>
+            
+            
+          </section>
+
+    <div class="container">
+        <div>
+                <h1 style="color: black;">Feedback</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <form action="suc2.html" name="feedback" onsubmit="return validatefeed()" method="post">
+        <div class="row input-container" style="display: grid;align-content: center;justify-content: center;">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" id="feedname"  >
+                        <label>Name</label> 
+                        <span id="fn"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input wide">
+                        <input type="text" id="feedemail"  >
+                        <label>Email</label> 
+                        <span id="fe"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input wide">
+                        <input type="text" id="feedphone"  >
+                        <label>Phone Number</label> 
+                        <span id="fp"></span>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea id="feedmessage" ></textarea>
+                        <label>Message</label>
+                        <span id="fm"></span>
+                    </div>
+                </div>
+                <!-- <input type="submit" value="submit" class="btn" name="send" style="background-color: rgb(71, 175, 210);"> -->
+                <div class="styled-input wide">
+                    <center><button class="btn" type="submit">Send</button></center>
+                </div>
+        </div>
+    </form>
+    </div>
+    <script src="valfeed.js">
+    </script>
+    </body>
